@@ -1,0 +1,9 @@
+<svg width="260" height="60" viewBox="0 0 260 60" xmlns="http://www.w3.org/2000/svg">
+  <rect width="260" height="60" rx="12" fill="#000"/>
+  <text x="20" y="38" fill="#fff" font-size="28" font-family="Arial" font-weight="600">
+    Ian
+  </text>
+  <text x="80" y="38" fill="#aaa" font-size="28" font-family="Arial">
+    iPhones
+  </text>
+</svg>

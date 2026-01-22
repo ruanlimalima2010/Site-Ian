@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Ian iPhones</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #000;
+    color: #fff;
+}
+
+/* TOPO */
+header {
+    background: #000;
+    border-bottom: 1px solid #1f1f1f;
+    padding: 15px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 22px;
+}
+
+/* CONTEÚDO */
+section {
+    padding: 20px;
+}
+
+h2 {
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+/* LISTA */
+.products {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* CARD */
+.card {
+    background: #111;
+    border-radius: 18px;
+    padding: 15px;
+}
+
+.card img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover; /* mobile */
+    border-radius: 14px;
+    background: #0b0b0b;
+}
+
+.badge {
+    display: inline-block;
+    padding: 5px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-bottom: 6px;
+}
+
+.novo { background: #007aff; }
+.usado { background: #34c759; }
+
+.card h3 {
+    margin-top: 8px;
+}
+
+.button {
+    display: block;
+    margin-top: 10px;
+    padding: 14px;
+    background: #fff;
+    color: #000;
+    text-align: center;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* WHATSAPP */
+.whatsapp {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    background: #25d366;
+    color: #fff;
+    padding: 14px 18px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* RODAPÉ */
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #777;
+    border-top: 1px solid #1f1f1f;
+}
+
+/* ===== PC / NOTEBOOK ===== */
+@media (min-width: 900px) {
+
+    section {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .products {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+    }
+
+    .card img {
+        height: 220px;
+        object-fit: contain; /* não corta no PC */
+        background: #0b0b0b;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>📱 Ian iPhones</h1>
+</header>
+
+<section>
+<h2>🆕 iPhones Novos</h2>
+<div class="products">
+
+<div class="card">
+<span class="badge novo">NOVO</span>
+<img src="iphone12.jpeg">
+<h3>iPhone 12</h3>
+<a class="button" href="https://wa.me/5564996117226?text=Tenho%20interesse%20no%20iPhone%2012%20NOVO">WhatsApp</a>
+</div>
+
+<div class="card">
+<span class="badge novo">NOVO</span>
+<img src="iphone13.jpeg">
+<h3>iPhone 13</h3>
+<a class="button" href="https://wa.me/5564996117226?text=Tenho%20interesse%20no%20iPhone%2013%20NOVO">WhatsApp</a>
+</div>
+
+<div class="card">
+<span class="badge novo">NOVO</span>
+<img src="iphone14.jpeg">
+<h3>iPhone 14</h3>
+<a class="button" href="https://wa.me/5564996117226?text=Tenho%20interesse%20no%20iPhone%2014%20NOVO">WhatsApp</a>
+</div>
+
+<div class="card">
+<span class="badge novo">NOVO</span>
+<img src="iphone15.jpeg">
+<h3>iPhone 15</h3>
+<a class="button" href="https://wa.me/5564996117226?text=Tenho%20interesse%20no%20iPhone%2015%20NOVO">WhatsApp</a>
+</div>
+
+</div>
+</section>
+
+<section>
+<h2>♻️ iPhones Usados</h2>
+<div class="products">
+
+<div class="card">
+<span class="badge usado">USADO</span>
+<img src="iphonexr.jpeg">
+<h3>iPhone XR</h3>
+<a class="button" href="https://wa.me/5564996117226?text=Tenho%20interesse%20no%20iPhone%20XR%20USADO">WhatsApp</a>
+</div>
+
+<div class="card">
+<span class="badge usado">USADO</span>
+<img src="iphone11.jpeg">
+<h3>iPhone 11</h3>
+<a class="button" href="https://wa.me/5564996117226?text=Tenho%20interesse%20no%20iPhone%2011%20USADO">WhatsApp</a>
+</div>
+
+</div>
+</section>
+
+<footer>
+    <p>© 2026 - Ian iPhones • Todos os direitos reservados</p>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/5564996117226">WhatsApp</a>
+
+</body>
+</html>
